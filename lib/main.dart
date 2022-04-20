@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:galaxy_view/views/home_screen.dart';
 import 'package:photo_manager/photo_manager.dart';
@@ -18,16 +19,19 @@ class MyApp extends StatelessWidget {
         child: Scaffold(
           body : Builder(
             builder: (context) {
-              return Center(
+              return Padding(
+                padding: const EdgeInsets.all(30.0),
                 child: Column(
-                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     const Text('Click this button to open \ngallery Images and Videos',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 20,
+                      fontSize: 16,
                     ),),
+                    const SizedBox(height: 20,),
                     TextButton(
                       style: TextButton.styleFrom(
                         enableFeedback: true,
@@ -49,6 +53,7 @@ class MyApp extends StatelessWidget {
                         ),
                       );
                     }, child: const Text('Open Gallery', style: TextStyle(color: Colors.white),),),
+                  const SizedBox(height: 100,)
                   ],
                 ),
               );

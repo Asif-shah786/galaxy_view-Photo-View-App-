@@ -20,7 +20,10 @@ class AssetThumbnail extends StatelessWidget {
       ) {
         final bytes = snapshot.data;
         if (bytes == null) {
-          return const CircularProgressIndicator();
+          return const Padding(
+            padding:  EdgeInsets.all(16.0),
+            child: CircularProgressIndicator(),
+          );
         } else
         {
           return InkWell(
