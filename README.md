@@ -23,3 +23,4 @@ APP SCREEN SHOTS
 ![Screenshot_20220421_011915_com google android packageinstaller](https://user-images.githubusercontent.com/62129751/164317286-1049a01d-d1f3-4a79-98b5-05e3266052e0.jpg)
 ![Screenshot_20220421_011941_com asifDev007 galaxy_view](https://user-images.githubusercontent.com/62129751/164317303-35602ee9-5064-4ce3-9bac-1600f6688e6e.jpg)
 ![Screenshot_20220421_012001_com asifDev007 galaxy_view](https://user-images.githubusercontent.com/62129751/164317333-a2a6fb61-4ef5-4fae-a73d-7752e646d6f0.jpg)
+![Screenshot_20220421_013211_com asifDev007 galaxy_view 1](https://user-images.githubusercontent.com/62129751/164317957-134ff2ce-de28-4e58-b724-ef298770779c.jpg)
