@@ -32,27 +32,17 @@ class MyApp extends StatelessWidget {
                       fontSize: 16,
                     ),),
                     const SizedBox(height: 20,),
-                    TextButton(
-                      style: TextButton.styleFrom(
-                        enableFeedback: true,
-                        backgroundColor: Colors.cyanAccent,
-                        elevation: 2,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(18.0),
-                            side: BorderSide(color: Colors.cyanAccent)
-                        ),
-                      ),
-                    onPressed: () async {
+                    CustomButton(title: 'Open Gallery', onPressed: () async {
                       final permitted = await PhotoManager.requestPermissionExtend();
                       if(permitted != null && permitted == false) {
                         return;
                       }
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (_) => HomePage(),
+                          builder: (_) => const HomePage(),
                         ),
                       );
-                    }, child: const Text('Open Gallery', style: TextStyle(color: Colors.white),),),
+                    },),
                   const SizedBox(height: 100,)
                   ],
                 ),
@@ -64,6 +54,30 @@ class MyApp extends StatelessWidget {
     );
 
 
+  }
+}
+
+class CustomButton extends StatelessWidget {
+  const CustomButton({
+    Key? key, required this.title, required this.onPressed,
+
+  }) : super(key: key);
+  final String title;
+  final VoidCallback onPressed;
+
+  @override
+  Widget build(BuildContext context) {
+    return TextButton(
+      style: TextButton.styleFrom(
+        enableFeedback: true,
+        backgroundColor: Colors.cyanAccent,
+        elevation: 2,
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(18.0),
+            side: BorderSide(color: Colors.cyanAccent)
+        ),
+      ),
+    onPressed: onPressed, child: Text(title, style: TextStyle(color: Colors.white),),);
   }
 }
 
