@@ -8,9 +8,16 @@ class LeftMenuBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      shape: const RoundedRectangleBorder(
+    borderRadius: BorderRadius.only(
+    topRight: Radius.circular(20),
+      bottomRight: Radius.circular(20)),
+    ),
+      backgroundColor: Colors.white70,
         child: ListView(
       children: [
         DrawerHeader(
+          curve: Curves.fastLinearToSlowEaseIn,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: const [
@@ -28,25 +35,30 @@ class LeftMenuBar extends StatelessWidget {
             ],
           ),
           decoration: const BoxDecoration(
+            borderRadius: BorderRadiusDirectional.only(bottomEnd: Radius.circular(20)),
             color: Colors.blueAccent,
           ),
         ),
-        buildMenuListTile(title: 'Videos', value: videosCount.toString()),
-        buildMenuListTile(title: 'Photos', value: photosCount.toString()),
+        buildMenuListTile(title: 'Videos', value: videosCount.toString(), leadingIcon: const Icon(Icons.video_library,size: 20,)),
+        buildMenuListTile(title: 'Photos', value: photosCount.toString(), leadingIcon: const Icon(Icons.photo_album,size: 20,)),
       ],
     ));
   }
 
-  Widget buildMenuListTile({required String value, required String  title}){
+  Widget buildMenuListTile({required Icon leadingIcon, required String value, required String  title}){
     TextStyle _style = const TextStyle(
     color: Colors.black,
+      fontSize: 15,
       fontWeight: FontWeight.w500,
     );
     return ListTile(
+      iconColor: Colors.blueAccent,
+      horizontalTitleGap: 0,
       dense: true,
-      visualDensity: const VisualDensity(horizontal: 0, vertical: -3),
+      visualDensity: const VisualDensity(horizontal: -4, vertical: -3),
       minVerticalPadding: 2,
-      leading: Text(title, style: _style,),
+      leading: leadingIcon,
+      title: Text(title, style: _style,),
       trailing: Text(value),
     );
   }

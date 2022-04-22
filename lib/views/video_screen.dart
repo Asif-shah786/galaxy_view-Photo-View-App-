@@ -49,7 +49,6 @@ class _VideoScreenState extends State<VideoScreen> {
       child: Scaffold(
         appBar: AppBar(
           title: const Text('Video Player'),
-          centerTitle: true,
         ),
         body: initialized
             ? Center(

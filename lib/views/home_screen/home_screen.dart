@@ -49,7 +49,6 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
           drawer: LeftMenuBar(videos, photos),
           appBar: AppBar(
-            centerTitle: true,
             title: const Text('Gallery'),
             actions: [buildDropdownButton()],
           ),
