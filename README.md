@@ -24,12 +24,12 @@ samples, guidance on mobile development, and a full API reference.
      <td>Sort and Left menu Added</td>
   </tr>
   <tr>
-    <td><img src="s1.png" width=270 height=480></td>
-    <td><img src="s2.png" width=270 height=480></td>
+    <td><img src="s1.jpg" width=270 height=480></td>
+    <td><img src="s2.jpg" width=270 height=480></td>
 
   <tr>
-     <td><img src="s3.png" width=270 height=480></td>
-    <td><img src="s4.png" width=270 height=480></td>
+     <td><img src="s3.jpg" width=270 height=480></td>
+    <td><img src="s4.jpg" width=270 height=480></td>
 
   </tr>
  </table>
