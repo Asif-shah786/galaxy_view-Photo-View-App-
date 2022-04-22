@@ -16,11 +16,20 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 "# galaxy_view-Photo-View-App-" 
 
-APP SCREEN SHOTS
+#### Flutter App Screenshots
 
-![Screenshot_20220421_011909_com asifDev007 galaxy_view 1](https://user-images.githubusercontent.com/62129751/164317065-01c406b4-a255-402c-b954-d019eb581784.jpg)
+<table>
+  <tr>
+    <th>Galaxy View</th>
+     <td>Sort and Left menu Added</td>
+  </tr>
+  <tr>
+    <td><img src="s1.png" width=270 height=480></td>
+    <td><img src="s2.png" width=270 height=480></td>
 
-![Screenshot_20220421_011915_com google android packageinstaller](https://user-images.githubusercontent.com/62129751/164317286-1049a01d-d1f3-4a79-98b5-05e3266052e0.jpg)
-![Screenshot_20220421_011941_com asifDev007 galaxy_view](https://user-images.githubusercontent.com/62129751/164317303-35602ee9-5064-4ce3-9bac-1600f6688e6e.jpg)
-![Screenshot_20220421_012001_com asifDev007 galaxy_view](https://user-images.githubusercontent.com/62129751/164317333-a2a6fb61-4ef5-4fae-a73d-7752e646d6f0.jpg)
-![Screenshot_20220421_013211_com asifDev007 galaxy_view 1](https://user-images.githubusercontent.com/62129751/164317957-134ff2ce-de28-4e58-b724-ef298770779c.jpg)
+  <tr>
+     <td><img src="s3.png" width=270 height=480></td>
+    <td><img src="s4.png" width=270 height=480></td>
+
+  </tr>
+ </table>
