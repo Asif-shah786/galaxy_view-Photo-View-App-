@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:galaxy_view/views/home_screen.dart';
+import 'package:galaxy_view/views/home_screen/home_screen.dart';
+import 'package:galaxy_view/widgets/CustomButton.dart';
 import 'package:photo_manager/photo_manager.dart';
 
 void main() => runApp(MyApp());
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
     // double width = MediaQuery.of(context).size.width;
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Galaxy Gallery photos and videos Viewer',
       home: SafeArea(
         child: Scaffold(
@@ -25,7 +27,7 @@ class MyApp extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    const Text('Click this button to open \ngallery Images and Videos',
+                    const Text('Click this button to open \ngallery images and videos',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -57,27 +59,4 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class CustomButton extends StatelessWidget {
-  const CustomButton({
-    Key? key, required this.title, required this.onPressed,
-
-  }) : super(key: key);
-  final String title;
-  final VoidCallback onPressed;
-
-  @override
-  Widget build(BuildContext context) {
-    return TextButton(
-      style: TextButton.styleFrom(
-        enableFeedback: true,
-        backgroundColor: Colors.cyanAccent,
-        elevation: 2,
-        shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(18.0),
-            side: BorderSide(color: Colors.cyanAccent)
-        ),
-      ),
-    onPressed: onPressed, child: Text(title, style: TextStyle(color: Colors.white),),);
-  }
-}
 

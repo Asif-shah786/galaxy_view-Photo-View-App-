@@ -20,7 +20,6 @@ class _VideoScreenState extends State<VideoScreen> {
     super.initState();
     _loadVideoFile();
   }
-
   void _loadVideoFile() async {
     try {
       final video = await widget.videoFile;
